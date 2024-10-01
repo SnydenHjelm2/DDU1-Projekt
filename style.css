@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter.ttf);
+}
+
+nav {
+    border-bottom: 3px #e5e5e5 solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+}
+
+nav div {
+    display: grid;
+}
+
+#nav-left {
+    grid-template-columns: repeat(6, auto);
+    align-items: center;
+}
+
+#nav-right {
+    grid-template-columns: repeat(3, auto);
+}
+
+nav div a {
+    justify-self: center;
+    padding: 7px;
+    margin: 5px;
+    text-decoration: none;
+    color: #050505;
+    font-family: "Inter";
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+nav div a:hover {
+    background-color: #f4f4f4;
+}
+
+#logo {
+    width: 100px;
+}
+
+.right-nav-items {
+    justify-self: end;
+}
+
+#nav-small-border {
+    grid-column: 1 / span 1;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.black-button:hover {
+    background-color: #353535;
+}
+
+main {
+    max-width: 1000px;
+    margin-top: 150px;
+}
+
+.row-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    font-family: "Inter";
+    padding-bottom: 100px;
+    border-bottom: #e5e5e5 3px solid;
+}
+
+.headers {
+    font-size: 53px;
+    font-weight: 650;
+    margin: 0;
+}
+
+.paragraphs {
+    font-size: 18px;
+    font-weight: 400;
+    color:  #7f7f7f;
+    margin: 5px 0px 30px 0px;
+}
+
+#top-header a {
+    padding: 10px;
+}
+
+#top-image {
+    grid-column: 2 / 4;
+}
+
+#top-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
