@@ -21,6 +21,7 @@ nav {
     position: fixed;
     left: 20px;
     right: 20px;
+    background-color: white;
 }
 
 nav div {
@@ -43,8 +44,9 @@ nav div a {
     text-decoration: none;
     color: #050505;
     font-family: "Inter";
-    font-size: 12px;
+    font-size: 13.5px;
     border-radius: 5px;
+    font-weight: 450;
 }
 
 nav div a:hover {
@@ -53,6 +55,7 @@ nav div a:hover {
 
 #logo {
     width: 100px;
+    margin-right: 10px;
 }
 
 .right-nav-items {
@@ -90,7 +93,6 @@ main {
     gap: 30px;
     font-family: "Inter";
     padding-bottom: 100px;
-    border-bottom: #e5e5e5 3px solid;
 }
 
 .headers {
@@ -120,18 +122,33 @@ main {
     object-fit: cover;
 }
 
-.company-logos {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+#companies {
+    border-top: #e5e5e5 3px solid;
+    border-bottom: #e5e5e5 3px solid;
+    padding: 10px 0px;
 }
 
 #top-companies {
-    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 3fr);
+    gap: 20px;
+    padding-top: 20px;
+    margin: 0px 25px 0px 25px;
+}
+
+#bottom-companies {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    padding: 20px 0px;
+    width: 700px;
+    margin: auto;
 }
 
 .logo-images {
-    height: 50px;
+    height: 30px;
+    width: 100px;
+    justify-self: center;
 }
 
 .logo-images img {
