@@ -63,6 +63,10 @@ nav div a:hover {
     grid-column: 1 / span 1;
 }
 
+#hamburger {
+    display: none;
+}
+
 .black-button {
     background-color: black;
     color: white;
@@ -114,4 +118,24 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.company-logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+#top-companies {
+    margin: 0 20px;
+}
+
+.logo-images {
+    height: 50px;
+}
+
+.logo-images img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
