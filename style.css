@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 * {
@@ -19,6 +17,7 @@ nav {
     justify-content: space-between;
     padding: 5px 0px;
     position: fixed;
+    top: 0;
     left: 20px;
     right: 20px;
     background-color: white;
@@ -76,6 +75,7 @@ nav div a:hover {
     border-radius: 5px;
     text-decoration: none;
     padding: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .black-button:hover {
@@ -84,12 +84,12 @@ nav div a:hover {
 
 main {
     max-width: 1000px;
-    margin-top: 150px;
+    margin: 150px auto 0px auto;
 }
 
 .row-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     gap: 30px;
     font-family: "Inter";
     padding-bottom: 100px;
@@ -105,7 +105,7 @@ main {
     font-size: 18px;
     font-weight: 400;
     color:  #7f7f7f;
-    margin: 5px 0px 30px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 #top-header a {
@@ -113,7 +113,7 @@ main {
 }
 
 #top-image {
-    grid-column: 2 / 4;
+    grid-column: 2 / 2;
 }
 
 #top-image img {
@@ -155,4 +155,50 @@ main {
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+/* @media (width >= 601px ) and (width <= 1080px) {
+    .row-layout {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    #top-image {
+        width: 50%;
+    }
+} */
+
+@media (width <= 600px) {
+    .nav-item {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline;
+        grid-column: 3 / 3;
+        height: 50px;
+        width: 50px;
+    }
+
+    .row-layout {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    #top-image {
+        width: 80%;
+    }
+
+    nav {
+        position: static;
+        margin: 0px 20px;
+    }
+
+    .paragraphs {
+        margin: 20px 20px;
+    }
 }
