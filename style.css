@@ -209,6 +209,7 @@ main {
 
 .service-ex-q-image {
     height: 80px;
+    margin: 0px 10px;
     justify-self: center;
     align-self: center;
 }
@@ -230,6 +231,11 @@ main {
     font-size: 14px;
     font-weight: 450;
     color: #999;
+}
+
+#bottom-service-example {
+    border-bottom: 3px #e5e5e5 solid;
+    padding-bottom: 100px;
 }
 
 /* @media (width >= 601px ) and (width <= 1080px) {
