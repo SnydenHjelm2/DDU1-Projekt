@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: "Inter";
 }
 
 * {
@@ -101,11 +102,15 @@ main {
     margin: 0;
 }
 
-.paragraphs {
+#top-header p {
     font-size: 18px;
     font-weight: 400;
-    color:  #7f7f7f;
     padding: 0px 0px 10px 0px;
+}
+
+.paragraphs {
+    color:  #7f7f7f;
+    line-height: 1.4;
 }
 
 #top-header a {
@@ -155,6 +160,14 @@ main {
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+.service-ex-header h2 {
+    font-size: 36px;
+}
+
+.service-ex-header p {
+    max-width: 400px;
 }
 
 /* @media (width >= 601px ) and (width <= 1080px) {
