@@ -162,12 +162,74 @@ main {
     object-fit: contain;
 }
 
+.service-example {
+    margin-top: 100px;
+}
+
 .service-ex-header h2 {
     font-size: 36px;
+    font-weight: 650;
+    margin: 0;
 }
 
 .service-ex-header p {
-    max-width: 400px;
+    max-width: 500px;
+    font-weight: 450;
+}
+
+.service-ex-image {
+    width: 100%;
+    margin: 50px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-ex-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-ex-sentance {
+    font-size: 36px;
+    font-weight: 550;
+    text-align: center;
+    color: #999;
+}
+
+.service-ex-quotee {
+    display: flex;
+    justify-content: center;
+}
+
+.service-ex-quotee-inside {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-ex-q-image {
+    height: 80px;
+    justify-self: center;
+    align-self: center;
+}
+
+.service-ex-q-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-ex-q-name h4, .service-ex-q-name p {
+    margin: 5px 0px;
+}
+
+.service-ex-q-name h4 {
+    font-size: 18px;
+}
+
+.service-ex-q-name p {
+    font-size: 14px;
+    font-weight: 450;
+    color: #999;
 }
 
 /* @media (width >= 601px ) and (width <= 1080px) {
