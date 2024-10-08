@@ -271,9 +271,9 @@ main {
     margin-top: 100px;
 }
 
-#free-plan-header h2 {
+#free-plan-header h2, #info-sq-header h2 {
     font-size: 36px;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 #free-plan-header p {
@@ -315,6 +315,41 @@ main {
 
 #bottom-li {
     border-style: none;
+}
+
+#info-squares {
+    margin-top: 100px;
+}
+
+#info-sq-header {
+    text-align: center;
+}
+
+#info-sq-content {
+    margin: 50px 0px 100px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.info-sq {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+#info-sq-middle {
+    border-right: var(--lighter) solid 2px;
+    border-left: var(--lighter) solid 2px;
+    padding: 0px 20px;
+}
+
+.info-sq a {
+    color: var(--darkest);
+}
+
+.info-sq a:hover {
+    color: var(--blue);
+    text-decoration-color: var(--dark-light);
 }
 /* @media (width >= 601px ) and (width <= 1080px) {
     .row-layout {
