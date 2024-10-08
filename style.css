@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Inter";
+    /*Variablar*/
     --darkest: #050505;
     --darker: #121212;
     --dark: #353535;
