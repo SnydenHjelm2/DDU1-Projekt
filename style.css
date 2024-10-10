@@ -423,6 +423,20 @@ main {
 #per-left, #per-mid-left, #per-mid-right {
     border-right: var(--lighter) 2px solid;
 }
+
+#before-footer {
+    text-align: center;
+    margin: 100px 0px;
+}
+
+#before-footer h2 {
+    margin: 0;
+    font-size: var(--font-36);
+}
+
+#before-footer p {
+    margin: 10px 0px 20px 0px;
+}
 /* @media (width >= 601px ) and (width <= 1080px) {
     .row-layout {
         display: flex;
