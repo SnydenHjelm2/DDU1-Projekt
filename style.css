@@ -619,4 +619,29 @@ footer {
     #info-sq-middle {
         border-style: none;
     }
+
+    #padding {
+        flex-direction: column;
+    }
+
+    #dogs-love-us h2 {
+        margin-bottom: 30px;
+    }
+
+    #dogs-love-h-p {
+        text-align: left;
+    }
+
+    #dogs-love-h-p h3 {
+        padding-top: 0px;
+    }
+
+    #percentages {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #per-left, #per-mid-left, #per-mid-right {
+        border-style: none;
+    }
 }
