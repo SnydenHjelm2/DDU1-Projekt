@@ -156,8 +156,8 @@ main {
 }
 
 #companies {
-    border-top: #e5e5e5 3px solid;
-    border-bottom: #e5e5e5 3px solid;
+    border-top: #e5e5e5 1.5px solid;
+    border-bottom: #e5e5e5 1.5px solid;
     padding: 10px 0px;
 }
 
@@ -174,7 +174,7 @@ main {
     grid-template-columns: repeat(6, 1fr);
     gap: 15px;
     padding: 20px 0px;
-    width: 700px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -536,7 +536,75 @@ footer {
         margin: 0px 20px;
     }
 
-    .paragraphs {
-        margin: 20px 20px;
+    main {
+        margin: 10px 20px;
+    }
+
+    #nav-small-border {
+        display: none;
+    }
+
+    #top-companies {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        margin: 0;
+    }
+
+    #codecademy {
+        grid-area: 1 / 1 / 1 / span 2;
+    }
+
+    #mitsubishi {
+        grid-area: 1 / 2 / 1 / span 2;
+    }
+
+    #headspace {
+        grid-area: 1 / 3 / 1 / span 2;
+    }
+
+    #curology {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    #branch {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    #match {
+        grid-area: 2 / 3 / 2 / 3;
+    }
+
+    #mixpanel {
+        grid-area: 2 / 4 / 2 / 4;
+    }
+    
+    .logo-images img {
+        width: 110px;
+    }
+
+    #bottom-companies {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        margin: 0px 15px;
+    }
+
+    #toyota {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    #discord {
+        grid-area: 2 / 3 / 2 / 3;
+    }
+
+    .service-ex-header {
+        text-align: center;
+    }
+
+    .service-ex-header h2 {
+        font-size: var(--font-36);
+    }
+
+    .service-ex-sentance p {
+        font-size: var(--font-26);
     }
 }
