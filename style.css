@@ -293,7 +293,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 650px;
+    max-width: 650px;
     margin: 100px auto 0px auto;
     background-color: #f4f4f4;
     padding: 20px 10px;
@@ -606,5 +606,17 @@ footer {
 
     .service-ex-sentance p {
         font-size: var(--font-26);
+    }
+
+    #free-plan-list {
+        margin-top: 50px;
+    }
+
+    #info-sq-content {
+        flex-direction: column;
+    }
+
+    #info-sq-middle {
+        border-style: none;
     }
 }
