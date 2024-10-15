@@ -519,7 +519,7 @@ footer {
     }
 
     main {
-        margin: 200px 30px;
+        margin: 200px 30px 0px 30px;
     }
 
     .row-layout {
@@ -578,6 +578,38 @@ footer {
 
     #dogs-love-h-p h3 {
         font-size: var(--font-18);
+    }
+
+    #percentages {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+
+    #per-left, #per-mid-left, #per-mid-right {
+        border-style: none;
+    }
+
+    #before-footer {
+        margin: 50px 0px
+    }
+
+    #foot-border {
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 0;
+        margin: 0px 30px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
+    #footer-general {
+        grid-area: 1 / 1 / 1 / span 2;
+    }
+
+    .footer-lists ul {
+        padding-left: 0;
     }
 } 
 
