@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Inter";
     /*Variablar*/
+    --bg: white;
     --darkest: #050505;
     --darker: #121212;
     --dark: #353535;
@@ -36,7 +37,7 @@ body {
 }
 
 nav {
-    border-bottom: 3px #e5e5e5 solid;
+    border-bottom: 3px var(--lighter) solid;
     display: flex;
     justify-content: space-between;
     padding: 5px 0px;
@@ -44,7 +45,7 @@ nav {
     top: 0;
     left: 20px;
     right: 20px;
-    background-color: white;
+    background-color: var(--bg);
 }
 
 nav div {
@@ -65,15 +66,15 @@ nav div a {
     padding: 7px;
     margin: 5px;
     text-decoration: none;
-    color: #050505;
+    color: var(--darkest);
     font-family: "Inter";
-    font-size: 13.5px;
+    font-size: var(--font-13-5);
     border-radius: 5px;
     font-weight: 450;
 }
 
 nav div a:hover {
-    background-color: #f4f4f4;
+    background-color: var(--lighest);
 }
 
 #logo {
@@ -99,16 +100,16 @@ nav div a:hover {
 }
 
 .black-button {
-    background-color: black;
-    color: white;
+    background-color: var(--darkest);
+    color: var(--bg);
     border-radius: 5px;
     text-decoration: none;
     padding: 7px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px var(--shadow-1);
 }
 
 .black-button:hover {
-    background-color: #353535;
+    background-color: var(--dark);
 }
 
 main {
@@ -125,19 +126,19 @@ main {
 }
 
 .headers {
-    font-size: 53px;
+    font-size: var(--font-53);
     font-weight: 650;
     margin: 0;
 }
 
 #top-header p {
-    font-size: 18px;
+    font-size: var(--font-18);
     font-weight: 400;
     padding: 0px 0px 10px 0px;
 }
 
 .paragraphs {
-    color:  #7f7f7f;
+    color:  var(--light-dark);
     line-height: 1.4;
 }
 
@@ -156,8 +157,8 @@ main {
 }
 
 #companies {
-    border-top: #e5e5e5 1.5px solid;
-    border-bottom: #e5e5e5 1.5px solid;
+    border-top: var(--lighter) 1.5px solid;
+    border-bottom: var(--lighter) 1.5px solid;
     padding: 10px 0px;
 }
 
@@ -195,7 +196,7 @@ main {
 }
 
 .service-ex-header h2 {
-    font-size: 36px;
+    font-size: var(--font-36);
     font-weight: 650;
     margin: 0;
 }
@@ -217,10 +218,10 @@ main {
 }
 
 .service-ex-sentance {
-    font-size: 36px;
+    font-size: var(--font-36);
     font-weight: 550;
     text-align: center;
-    color: #999;
+    color: var(--light);
 }
 
 .service-ex-quotee {
@@ -252,13 +253,13 @@ main {
 }
 
 .service-ex-q-name h4 {
-    font-size: 18px;
+    font-size: var(--font-18);
 }
 
 .service-ex-q-name p {
-    font-size: 14px;
+    font-size: var(--font-14);
     font-weight: 450;
-    color: #999;
+    color: var(--light);
 }
 
 #bottom-service-example {
@@ -277,15 +278,15 @@ main {
 }
 
 #free-plan-header h2, #info-sq-header h2 {
-    font-size: 36px;
+    font-size: var(--font-36);
     margin: 10px 0px;
 }
 
 #free-plan-header p {
-    font-size: 16px;
+    font-size: var(--font-16);
     max-width: 500px;
     margin: 0px auto 20px auto;
-    color: #666;
+    color: var(--dark-light);
 }
 
 #free-plan-list {
@@ -295,22 +296,22 @@ main {
     align-items: center;
     max-width: 650px;
     margin: 100px auto 0px auto;
-    background-color: #f4f4f4;
+    background-color: var(--lighest);
     padding: 20px 10px;
     border-radius: 10px;
 }
 
 .bold {
-    color: black;
+    color: var(--darkest);
 }
 
 .free-plan-li {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    color: #7f7f7f;
-    font-size: 15px;
-    border-bottom: 2px solid #e5e5e5;
+    color: var(--light-dark);
+    font-size: var(--font-15);
+    border-bottom: 2px solid var(--lighter);
 }
 
 .check {
@@ -362,7 +363,7 @@ main {
     margin: auto;
 }
 
-#padding {
+#dogs-love-us-main {
     padding-bottom: 50px;
 }
 
@@ -495,18 +496,90 @@ footer {
     color: var(--darkest);
     font-weight: 550;
 }
-/* @media (width >= 601px ) and (width <= 1080px) {
+
+@media (width >= 601px ) and (width <= 1080px) {
+    .nav-item {
+        display: none;
+    }
+
+    .black-button {
+        display: inline;
+        height: auto;
+        align-self: center;
+    }
+
+    #nav-small-border {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline;
+        height: 40px;
+        width: 40px;
+    }
+
+    main {
+        margin: 200px 30px;
+    }
+
     .row-layout {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
         text-align: center;
     }
 
-    #top-image {
-        width: 50%;
+    .headers {
+        font-size: var(--font-36);
     }
-} */
+
+    #top-header p {
+        font-size: var(--font-15);
+        margin: 10px 75px;
+    }
+
+    #top-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #top-image img {
+        width: 60%;
+    }
+
+    #bottom-companies {
+        margin: 0px 75px;
+    }
+
+    #info-sq-content {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        margin-top: 10px;
+        margin-bottom: 150px;
+    }
+
+    #info-sq-content p {
+        font-size: var(--font-14);
+    }
+
+    #info-sq-middle {
+        border-style: none;
+    }
+
+    #dogs-love-us-main {
+        flex-direction: row;
+    }
+
+    #dogs-love-h-p, #dogs-love-img {
+        flex-grow: 1;
+        flex-basis: 0;
+        text-align: left;
+        font-size: var(--font-13-5);
+    }
+
+    #dogs-love-h-p h3 {
+        font-size: var(--font-18);
+    }
+} 
 
 @media (width <= 600px) {
     .nav-item {
@@ -620,7 +693,7 @@ footer {
         border-style: none;
     }
 
-    #padding {
+    #dogs-love-us-main {
         flex-direction: column;
     }
 
