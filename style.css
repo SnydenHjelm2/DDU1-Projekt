@@ -60,12 +60,18 @@ nav {
     z-index: 1;
 }
 
-#shadow-div { box-shadow: 2px 2px 2px var(--shadow-2); }
-
 .dropdown-complex {
     background-color: var(--bg);
     width: 250px;
-    height: 60px;
+    height: 65px;
+    padding: 9px 0px;
+    border: 7px solid var(--bg);
+    border-radius: 0px;
+    box-shadow: 5px 10px 10px var(--shadow-2), -5px 11px 10px var(--shadow-2);
+}
+
+.dropdown-complex:hover {
+    background-color: var(--lighest);
 }
 
 .dropdown-complex p, h5 {
@@ -79,21 +85,31 @@ nav {
 
 .dropdown-complex p {
     font-size: var(--font-12);
+    color: var(--light);
 }
 
-#product-one { top: calc(100%)}
+#product-one { 
+    top: calc(100%); 
+    box-shadow: 0px -5px 10px var(--shadow-2),
+    -5px 0px 10px var(--shadow-2),
+    5px 0px 10px var(--shadow-2);
+    border-radius: 5px 5px 0px 0px;
+}
 
-#product-two {top: calc(100% +  60px);}
+#product-two {top: calc(100% +  65px);}
 
-#product-three {top: calc(100% + 60px * 2);}
+#product-three {top: calc(100% + 65px * 2);}
 
-#product-four {top: calc(100% + 60px * 3);}
+#product-four {top: calc(100% + 65px * 3);}
 
-#product-five {top: calc(100% + 60px * 4);}
+#product-five {top: calc(100% + 65px * 4);}
 
-#product-six {top: calc(100% + 60px * 5);}
+#product-six {top: calc(100% + 65px * 5);}
 
-#product-seven {top: calc(100% + 60px * 6);}
+#product-seven {
+    top: calc(100% + 65px * 6);
+    border-radius: 0px 0px 5px 5px;
+}
 
 .nav-item-box:hover .drop-down-item {
     display: grid;
@@ -101,10 +117,13 @@ nav {
 }
 
 .nav-icon {
-    height: 25px;
+    height: 30px;
     grid-area: 1 / 1 / span 2 / 1;
     align-self: center;
     justify-self: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 #nav-left, #nav-right {
