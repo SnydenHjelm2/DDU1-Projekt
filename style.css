@@ -113,7 +113,7 @@ nav {
 
 .nav-item-box:hover .drop-down-item {
     display: grid;
-    grid-template: repeat(2, 1fr) / 1fr 2fr;
+    grid-template: repeat(2, 1fr) / 50px 1fr;
 }
 
 .nav-icon {
