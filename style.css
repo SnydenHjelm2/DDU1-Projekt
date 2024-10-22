@@ -336,27 +336,15 @@ main {
     border-top: var(--lighter) 1.5px solid;
     border-bottom: var(--lighter) 1.5px solid;
     padding: 10px 0px;
-}
-
-#top-companies {
-    display: grid;
-    grid-template-columns: repeat(7, 3fr);
-    gap: 20px;
-    padding-top: 20px;
-    margin: 0px 25px 0px 25px;
-}
-
-#bottom-companies {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-    padding: 20px 0px;
-    max-width: 700px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 0px 40px;
 }
 
 .logo-images {
-    height: 30px;
+    height: 27px;
     max-width: 100px;
     justify-self: center;
 }
@@ -820,57 +808,9 @@ footer {
     #nav-small-border {
         display: none;
     }
-
-    #top-companies {
-        display: grid;
-        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-        margin: 0;
-    }
-
-    #codecademy {
-        grid-area: 1 / 1 / 1 / span 2;
-    }
-
-    #mitsubishi {
-        grid-area: 1 / 2 / 1 / span 2;
-    }
-
-    #headspace {
-        grid-area: 1 / 3 / 1 / span 2;
-    }
-
-    #curology {
-        grid-area: 2 / 1 / 2 / 1;
-    }
-
-    #branch {
-        grid-area: 2 / 2 / 2 / 2;
-    }
-
-    #match {
-        grid-area: 2 / 3 / 2 / 3;
-    }
-
-    #mixpanel {
-        grid-area: 2 / 4 / 2 / 4;
-    }
     
     .logo-images img {
         max-width: 100px;
-    }
-
-    #bottom-companies {
-        display: grid;
-        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-        margin: 0px 15px;
-    }
-
-    #toyota {
-        grid-area: 2 / 2 / 2 / 2;
-    }
-
-    #discord {
-        grid-area: 2 / 3 / 2 / 3;
     }
 
     .service-ex-header {
